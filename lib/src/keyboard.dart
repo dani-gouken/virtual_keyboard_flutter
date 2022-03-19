@@ -173,8 +173,6 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
               } else {
                 // Call the builder function, so the user can specify custom UI for keys.
                 keyWidget = builder!(context, virtualKeyboardKey);
-
-                throw 'builder function must return Widget';
               }
 
               return keyWidget;
